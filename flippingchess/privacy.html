@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | 隐私政策</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: auto; padding: 20px; background-color: #f8f9fa; }
+        .container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .column { display: none; }
+        .column.active { display: block; }
+        h1 { font-size: 22px; color: #2c3e50; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        h2 { font-size: 17px; color: #0056b3; margin-top: 20px; }
+        p, li { font-size: 14px; margin-bottom: 10px; }
+        .highlight { background: #fff3cd; padding: 2px 4px; border-radius: 3px; }
+        .contact { background: #e9ecef; padding: 15px; border-radius: 5px; margin-top: 20px; font-weight: bold; }
+        @media (max-width: 768px) { .container { padding: 15px; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- ENGLISH VERSION -->
+    <div class="column" id="en-version">
+        <h1>Privacy Policy</h1>
+        <p><strong>Last Updated:</strong> February 6, 2026</p>
+        <p><strong>Crab Studio</strong> ("we") provides this policy to explain our data practices for the game <strong>Flipping Chess</strong>.</p>
+
+        <h2>1. Data Collection</h2>
+        <p>We do not collect personal information like names or emails. The only data processed is the <span class="highlight">Android Advertising ID</span>.</p>
+
+        <h2>2. Use of Advertising ID</h2>
+        <p>This identifier is used strictly for:</p>
+        <ul>
+            <li><strong>Advertising:</strong> Serving relevant ads via AdMob.</li>
+        </ul>
+
+        <h2>3. Data Sharing</h2>
+        <p>We may share the Advertising ID with third-party ad networks. These partners are required to use the data only for the purposes stated above.</p>
+
+        <h2>4. Data Deletion & Rights</h2>
+        <p>Users can reset or delete their Advertising ID at any time via Android Settings.</p>
+
+        <h2>5. Children's Privacy</h2>
+        <p>We do not knowingly collect data from children under 13. If your game targets children, ensure you use a Families-certified Ads SDK.</p>
+
+        <div class="contact">
+            Contact: e-setup@qq.com<br>
+            Entity: Crab Studio
+        </div>
+    </div>
+
+    <!-- SIMPLIFIED CHINESE VERSION -->
+    <div class="column" id="zh-version" lang="zh-Hans">
+        <h1>隐私政策</h1>
+        <p><strong>最近更新日期：</strong> 2026年2月6日</p>
+        <p><strong>螃蟹工作室(Crab Studio)</strong>（以下简称“我们”）制定本政策，以说明 <strong>象棋遭遇战</strong> 的数据处理方式。</p>
+
+        <h2>1. 数据收集</h2>
+        <p>我们不收集姓名或电子邮件等个人信息。唯一处理的数据是 <span class="highlight">Android 广告标识符 (Advertising ID)</span>。</p>
+
+        <h2>2. 广告标识符的使用</h2>
+        <p>该标识符仅用于以下目的：</p>
+        <ul>
+            <li><strong>广告投放：</strong> 通过 AdMob 投放相关广告。</li>
+        </ul>
+
+        <h2>3. 数据共享</h2>
+        <p>我们可能会与第三方广告网络共享广告标识符。这些合作伙伴必须仅在上述目的范围内使用数据。</p>
+
+        <h2>4. 数据删除与权利</h2>
+        <p>用户可以随时通过 Android 设置重置或删除广告标识符。</p>
+
+        <h2>5. 儿童隐私</h2>
+        <p>我们不会故意收集 13 岁以下儿童的数据。如果您的游戏面向儿童，请确保使用 Google Play 认证的家庭广告 SDK。</p>
+
+        <div class="contact">
+            联系方式：e-setup@qq.com<br>
+            开发者：螃蟹工作室(Crab Studio)
+        </div>
+    </div>
+</div>
+
+<script>
+    // 检测浏览器语言
+    function detectLanguage() {
+        // 获取浏览器语言
+        const lang = navigator.language || navigator.userLanguage;
+        // 提取语言代码（如 'zh-CN' -> 'zh'）
+        const langCode = lang.split('-')[0];
+        
+        // 根据语言代码显示对应版本
+        if (langCode === 'zh') {
+            document.getElementById('zh-version').classList.add('active');
+        } else {
+            document.getElementById('en-version').classList.add('active');
+        }
+    }
+    
+    // 页面加载完成后执行语言检测
+    window.onload = detectLanguage;
+</script>
+
+</body>
+</html>
